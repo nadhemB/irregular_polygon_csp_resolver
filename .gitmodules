@@ -1,0 +1,6 @@
+[submodule "resolver_core/extern/glm"]
+	path = resolver_core/extern/glm
+	url = https://github.com/g-truc/glm.git
+[submodule "resolver_core/extern/json"]
+	path = resolver_core/extern/json
+	url = https://github.com/nlohmann/json.git
