@@ -26,20 +26,19 @@ public:
         return j.dump(4); // pretty print
     }
 
-    Problem fromJSON(std::string jsonStr) override
+    Problem &fromJSON(std::string jsonStr) override
     {
         auto j = nlohmann::json::parse(jsonStr);
-        Problem problem;
-        j.at("panel").get_to(problem.panel);
+        j.at("panel").get_to(panel);
 
         for (const auto &item : j["pieces"])
         {
             Polygon poly;
             poly = poly.fromJSON(item.dump());
-            problem.pieces.push_back(poly);
+            pieces.push_back(poly);
         }
 
-        return problem;
+        return *this;
     }
 
 private:

@@ -46,7 +46,7 @@ public:
         return j.dump(4); // pretty print
     }
 
-    Polygon fromJSON(std::string json) override
+    Polygon &fromJSON(std::string json) override
     {
         nlohmann::json j = nlohmann::json::parse(json);
         vertices = j.at("vertices").get<std::vector<glm::vec2>>();
