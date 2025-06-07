@@ -4,7 +4,7 @@
 #include "graphics/print_config.h"
 #include "graphics/svg_printer.h"
 
-int main()
+void printPolytoSVG()
 {
     std::vector<glm::vec2> vertices;
     vertices.push_back(glm::vec2(0, 900));

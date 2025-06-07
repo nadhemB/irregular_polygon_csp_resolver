@@ -5,6 +5,15 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+find_package(OpenCL)
+
+if(NOT OpenCL_FOUND)
+    message(FATAL_ERROR "OpenCL not found on your system. Please install OpenCL SDK or drivers.")
+endif()
+
+message(STATUS "OpenCL include dirs: ${OpenCL_INCLUDE_DIRS}")
+message(STATUS "OpenCL libraries: ${OpenCL_LIBRARIES}")
+
 set(SHARED_SOURCES
     extern/tinyfiledialogs/tinyfiledialogs.c
 )
@@ -14,6 +23,12 @@ set(SHARED_INCLUDE_DIRS
     extern/glm
     extern/json/single_include
     extern/tinyfiledialogs
+    ${OpenCL_INCLUDE_DIRS}
+)
+
+set(SHARED_LIBS
+    ${CMAKE_DL_LIBS}
+    ${OpenCL_LIBRARIES}
 )
 
 file(GLOB_RECURSE SRC_FILES src/*.cpp)
@@ -30,7 +45,7 @@ target_include_directories(resolver_core PRIVATE
 )
 
 target_link_libraries(resolver_core
-    ${CMAKE_DL_LIBS}
+    ${SHARED_LIBS}
 )
 
 add_custom_command(
@@ -43,17 +58,18 @@ add_custom_command(
 file(GLOB TEST_FILES tests/*.cpp)
 
 if(TEST_FILES)
-    add_executable(resolver_tests ${TEST_FILES} ${SRC_FILES} ${SHARED_SOURCES})
+    add_executable(solver_test ${TEST_FILES} ${SRC_FILES} ${SHARED_SOURCES} test_runner.cpp)
 
-    target_include_directories(resolver_tests PRIVATE
+    target_include_directories(solver_test PRIVATE
         ${SHARED_INCLUDE_DIRS}
+        ${CMAKE_SOURCE_DIR}/tests
     )
 
-    target_link_libraries(resolver_tests PRIVATE
-        ${CMAKE_DL_LIBS}
+    target_link_libraries(solver_test PRIVATE
+        ${SHARED_LIBS}
     )
 
     # Enable ctest if needed
     enable_testing()
-    add_test(NAME SvgPrinterTest COMMAND resolver_tests)
+    add_test(NAME SolverTest COMMAND resolver_tests)
 endif()
