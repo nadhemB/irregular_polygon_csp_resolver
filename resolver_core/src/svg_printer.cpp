@@ -50,10 +50,10 @@ void SvgPrinter::exportToFile()
         std::ofstream file(path);
 
         // If file already exists, user will be warned by OS.
-        file.open(path); // Will create the file if it doesn't exist.
         if (file.is_open())
         {
-            file << buffer.str();
+            std::string content = buffer.str();
+            file << content;
             file.close();
         }
     }
