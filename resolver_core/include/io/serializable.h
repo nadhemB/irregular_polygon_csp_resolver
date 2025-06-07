@@ -1,9 +1,11 @@
 #pragma once
 
-template <typename T>
+#include <string>
+
 class Serializable
 {
 public:
+    virtual ~Serializable() = default;
     virtual std::string toJsonString() const = 0;
-    virtual T &fromJSON(std::string json) = 0;
+    virtual void fromJSON(const std::string &json) = 0;
 };

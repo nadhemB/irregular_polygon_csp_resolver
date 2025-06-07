@@ -1,0 +1,10 @@
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/CMakeFiles/abi_compat_main.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/config/CMakeFiles/abi_config_default.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/config/CMakeFiles/abi_config_noversion.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/config/CMakeFiles/abi_config_custom.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/diag/CMakeFiles/abi_compat_diag_on.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/diag/CMakeFiles/abi_compat_diag_off.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/diag/CMakeFiles/abi_compat_diag.dir
+C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build/inline_ns/CMakeFiles/abi_compat_inline_ns.dir

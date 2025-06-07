@@ -1,0 +1,656 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						6
+					]
+				},
+				{
+					"build" : "config",
+					"jsonFile" : "directory-config-Debug-4da22e615810e948ed22.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "config",
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "diag",
+					"jsonFile" : "directory-diag-Debug-cf2bec00dc316e072c00.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "diag",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "inline_ns",
+					"jsonFile" : "directory-inline_ns-Debug-caa7a372c854096871f3.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "inline_ns",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-2d1e1ed42dc181ca2b10.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-12bab7d079cc3ad15fbd.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag-Debug-9b5132c7c8c481c326ca.json",
+					"name" : "abi_compat_diag",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_off::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_off-Debug-8b02211367bf89e6290f.json",
+					"name" : "abi_compat_diag_off",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_on::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_on-Debug-08d7a7fb7c39a474e591.json",
+					"name" : "abi_compat_diag_on",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "abi_compat_inline_ns::@8ce2cd6d9ff5fcdc9399",
+					"jsonFile" : "target-abi_compat_inline_ns-Debug-187a0611c113af72238c.json",
+					"name" : "abi_compat_inline_ns",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "abi_compat_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-abi_compat_main-Debug-09b9966abb39599a1d03.json",
+					"name" : "abi_compat_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_custom::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_custom-Debug-9a670700e2c434c7edaa.json",
+					"name" : "abi_config_custom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_default::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_default-Debug-22fd7890b506bf3d9e0a.json",
+					"name" : "abi_config_default",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_noversion::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_noversion-Debug-12e051addf6115951863.json",
+					"name" : "abi_config_noversion",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						6
+					]
+				},
+				{
+					"build" : "config",
+					"jsonFile" : "directory-config-Release-4da22e615810e948ed22.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "config",
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "diag",
+					"jsonFile" : "directory-diag-Release-cf2bec00dc316e072c00.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "diag",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "inline_ns",
+					"jsonFile" : "directory-inline_ns-Release-caa7a372c854096871f3.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "inline_ns",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-2d1e1ed42dc181ca2b10.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-12bab7d079cc3ad15fbd.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag-Release-c9c6c913a404526d96e6.json",
+					"name" : "abi_compat_diag",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_off::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_off-Release-f65ac99e7495f716747b.json",
+					"name" : "abi_compat_diag_off",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_on::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_on-Release-d607b8b4ed48a404bca3.json",
+					"name" : "abi_compat_diag_on",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "abi_compat_inline_ns::@8ce2cd6d9ff5fcdc9399",
+					"jsonFile" : "target-abi_compat_inline_ns-Release-118c851a7417da92618c.json",
+					"name" : "abi_compat_inline_ns",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "abi_compat_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-abi_compat_main-Release-918abe4ea234a620baed.json",
+					"name" : "abi_compat_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_custom::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_custom-Release-de4f03eebd490224c577.json",
+					"name" : "abi_config_custom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_default::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_default-Release-8d36c3d3d17efde08dc5.json",
+					"name" : "abi_config_default",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_noversion::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_noversion-Release-f5bf7b56786c19075d90.json",
+					"name" : "abi_config_noversion",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-MinSizeRel-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						6
+					]
+				},
+				{
+					"build" : "config",
+					"jsonFile" : "directory-config-MinSizeRel-4da22e615810e948ed22.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "config",
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "diag",
+					"jsonFile" : "directory-diag-MinSizeRel-cf2bec00dc316e072c00.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "diag",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "inline_ns",
+					"jsonFile" : "directory-inline_ns-MinSizeRel-caa7a372c854096871f3.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "inline_ns",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-2d1e1ed42dc181ca2b10.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-12bab7d079cc3ad15fbd.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag-MinSizeRel-bda911541565e8aeca68.json",
+					"name" : "abi_compat_diag",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_off::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_off-MinSizeRel-1866d2dcab4eba37e464.json",
+					"name" : "abi_compat_diag_off",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_on::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_on-MinSizeRel-92757499115fdfb9a97c.json",
+					"name" : "abi_compat_diag_on",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "abi_compat_inline_ns::@8ce2cd6d9ff5fcdc9399",
+					"jsonFile" : "target-abi_compat_inline_ns-MinSizeRel-75efbefe7a2b6f3aefb7.json",
+					"name" : "abi_compat_inline_ns",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "abi_compat_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-abi_compat_main-MinSizeRel-94f257f6cecb82d1ce3a.json",
+					"name" : "abi_compat_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_custom::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_custom-MinSizeRel-a80a570ac976d8753584.json",
+					"name" : "abi_config_custom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_default::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_default-MinSizeRel-7d3734ebb568ed7c6678.json",
+					"name" : "abi_config_default",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_noversion::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_noversion-MinSizeRel-17387b9aada5c885f2ba.json",
+					"name" : "abi_config_noversion",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						6
+					]
+				},
+				{
+					"build" : "config",
+					"jsonFile" : "directory-config-RelWithDebInfo-4da22e615810e948ed22.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "config",
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "diag",
+					"jsonFile" : "directory-diag-RelWithDebInfo-cf2bec00dc316e072c00.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "diag",
+					"targetIndexes" : 
+					[
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "inline_ns",
+					"jsonFile" : "directory-inline_ns-RelWithDebInfo-caa7a372c854096871f3.json",
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "inline_ns",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "Project",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-2d1e1ed42dc181ca2b10.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-12bab7d079cc3ad15fbd.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag-RelWithDebInfo-33dd707a5bc2bf6d9e7d.json",
+					"name" : "abi_compat_diag",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_off::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_off-RelWithDebInfo-4d5e2f8a95af79475c7e.json",
+					"name" : "abi_compat_diag_off",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "abi_compat_diag_on::@add19367953daf9688b7",
+					"jsonFile" : "target-abi_compat_diag_on-RelWithDebInfo-9b62a57ceb181b3d6b4d.json",
+					"name" : "abi_compat_diag_on",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "abi_compat_inline_ns::@8ce2cd6d9ff5fcdc9399",
+					"jsonFile" : "target-abi_compat_inline_ns-RelWithDebInfo-20138487e85b6ae08107.json",
+					"name" : "abi_compat_inline_ns",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "abi_compat_main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-abi_compat_main-RelWithDebInfo-8bd9df29043c56e774b1.json",
+					"name" : "abi_compat_main",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_custom::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_custom-RelWithDebInfo-787b4295f4a26969b15c.json",
+					"name" : "abi_config_custom",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_default::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_default-RelWithDebInfo-ae0d2ea4dd0266352aba.json",
+					"name" : "abi_config_default",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "abi_config_noversion::@1ea838694151cac89012",
+					"jsonFile" : "target-abi_config_noversion-RelWithDebInfo-7b4d4576cc8ff2dbbd00.json",
+					"name" : "abi_config_noversion",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/build",
+		"source" : "C:/Users/nadhe/_workdir/web/irregular_polygon_csp_resolver/resolver_core/extern/json/tests/abi"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

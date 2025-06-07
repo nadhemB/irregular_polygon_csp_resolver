@@ -4,7 +4,7 @@
 #include "geomtery/poly.h"
 #include "io/json_adapter.h"
 
-class Problem : public Serializable<Problem>
+class Problem : public Serializable
 {
 
 public:
@@ -26,19 +26,26 @@ public:
         return j.dump(4); // pretty print
     }
 
-    Problem &fromJSON(std::string jsonStr) override
+    void fromJSON(const std::string &jsonStr) override
     {
+        pieces.clear();
         auto j = nlohmann::json::parse(jsonStr);
         j.at("panel").get_to(panel);
 
         for (const auto &item : j["pieces"])
         {
-            Polygon poly;
-            poly = poly.fromJSON(item.dump());
-            pieces.push_back(poly);
-        }
 
-        return *this;
+            Polygon poly;
+            poly.fromJSON(item["vertices"].dump());
+            int count = item["count"];
+            for (int i = 0; i < count; i++)
+                pieces.push_back(Polygon(poly));
+        }
+    }
+
+    std::vector<Polygon> getPieces() const
+    {
+        return pieces;
     }
 
 private:

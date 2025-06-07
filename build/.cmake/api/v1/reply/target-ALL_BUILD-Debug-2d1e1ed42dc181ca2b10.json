@@ -1,0 +1,57 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "abi_config_default::@1ea838694151cac89012"
+		},
+		{
+			"id" : "abi_config_noversion::@1ea838694151cac89012"
+		},
+		{
+			"id" : "abi_config_custom::@1ea838694151cac89012"
+		},
+		{
+			"id" : "abi_compat_diag_on::@add19367953daf9688b7"
+		},
+		{
+			"id" : "abi_compat_diag_off::@add19367953daf9688b7"
+		},
+		{
+			"id" : "abi_compat_diag::@add19367953daf9688b7"
+		},
+		{
+			"id" : "abi_compat_inline_ns::@8ce2cd6d9ff5fcdc9399"
+		},
+		{
+			"id" : "abi_compat_main::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+	"isGeneratorProvided" : true,
+	"name" : "ALL_BUILD",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

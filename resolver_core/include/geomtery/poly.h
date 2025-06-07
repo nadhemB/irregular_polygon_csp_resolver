@@ -6,11 +6,10 @@
 #include <string>
 #include "io/json_adapter.h"
 
-class Polygon : public Serializable<Polygon>
+class Polygon : public Serializable
 {
 public:
     Polygon() = default;
-
     explicit Polygon(const std::vector<glm::vec2> &points)
         : vertices(points) {}
 
@@ -46,13 +45,11 @@ public:
         return j.dump(4); // pretty print
     }
 
-    Polygon &fromJSON(std::string json) override
+    void fromJSON(const std::string &json) override
     {
         nlohmann::json j = nlohmann::json::parse(json);
-        vertices = j.at("vertices").get<std::vector<glm::vec2>>();
-        return *this;
-    };
+        vertices = j.get<std::vector<glm::vec2>>();
+    }
 
-private:
     std::vector<glm::vec2> vertices;
 };
