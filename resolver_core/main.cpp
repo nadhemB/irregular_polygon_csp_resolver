@@ -1,6 +1,6 @@
 #include <iostream>
 #include <glm/glm.hpp>
-#include "geomtery/poly.h"
+#include "geometry/poly.h"
 #include "solver/problem.h"
 #include <fstream>
 #include <sstream>

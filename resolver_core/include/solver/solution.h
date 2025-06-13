@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "geomtery/poly.h"
+#include "geometry/poly.h"
 #include <glm/ext/matrix_float4x4.hpp>
 
 class Solution

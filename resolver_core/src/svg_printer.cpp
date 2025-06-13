@@ -14,6 +14,24 @@ void SvgPrinter::writePoly(Polygon &poly)
     buffer << svg << std::endl;
 }
 
+
+
+void SvgPrinter::writePoints(std::vector<glm::vec2> &points, int size)
+{
+    for (auto &point : points)
+    {
+        buffer << std::format("<circle cx=\" {} \" cy=\" {} \" r=\"{}\" />", static_cast<int>(point.x),
+                              static_cast<int>(point.y), size)
+               << std::endl;
+    }
+}
+void SvgPrinter::writeCircle(const Circle& circle, glm::vec3 color)
+{
+    buffer << std::format("<circle cx=\" {} \" cy=\" {} \" r=\"{}\"  stroke=\"{}\" fill=\"none\" />",
+        static_cast<int>(circle.center.x),
+        static_cast<int>(circle.center.y), static_cast<int>(circle.radius), encodeColor(color))
+        << std::endl;
+}
 std::string SvgPrinter::encodeColor(glm::vec3 color)
 {
     float r = std::clamp(color.r, 0.0f, 1.0f);

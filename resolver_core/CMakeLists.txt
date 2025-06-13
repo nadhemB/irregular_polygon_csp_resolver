@@ -55,10 +55,11 @@ add_custom_command(
     $<TARGET_FILE_DIR:resolver_core>/assets
 )
 
-file(GLOB TEST_FILES tests/*.cpp)
 
-if(TEST_FILES)
-    add_executable(solver_test ${TEST_FILES} ${SRC_FILES} ${SHARED_SOURCES} test_runner.cpp)
+
+        message("Configuring test executable")
+
+    add_executable(solver_test  ${SRC_FILES} ${SHARED_SOURCES} test_runner.cpp)
 
     target_include_directories(solver_test PRIVATE
         ${SHARED_INCLUDE_DIRS}
@@ -71,5 +72,6 @@ if(TEST_FILES)
 
     # Enable ctest if needed
     enable_testing()
-    add_test(NAME SolverTest COMMAND resolver_tests)
-endif()
+    add_test(NAME SolverTest COMMAND solver_test)
+
+

@@ -29,7 +29,19 @@ public:
             const glm::vec2 &next = vertices[(i + 1) % n];
             a += curr.x * next.y - next.x * curr.y;
         }
-        return 0.5f * std::abs(a);
+        return 0.5f * a;
+    }
+
+    void setWinding(short winding)
+    {
+        float currentWinding = signedArea();
+        if (currentWinding == 0)
+            return;
+
+        if ((winding * currentWinding < 0))
+        {
+            std::reverse(vertices.begin(), vertices.end());
+        }
     }
 
     std::vector<std::array<glm::vec2, 3>> triangulate() const

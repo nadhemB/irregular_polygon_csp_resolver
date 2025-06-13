@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch resolver_core",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/resolver_core/build/Debug/resolver_core.exe", // Adjust if needed
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/resolver_core",
+            "environment": [],
+            "externalConsole": false,
+        }
+    ]
+}

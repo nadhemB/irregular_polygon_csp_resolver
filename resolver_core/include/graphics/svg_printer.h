@@ -2,17 +2,20 @@
 #include < string>
 #include <fstream>
 #include <format>
-#include "geomtery/poly.h"
+#include "geometry/poly.h"
 #include "graphics/print_config.h"
 #include "tinyfiledialogs.h"
 #include <iostream>
 #include <sstream>
+#include <geometry/shapes2d.h>
 
 class SvgPrinter
 {
 
 public:
     void writePoly(Polygon &poly);
+    void writePoints(std::vector<glm::vec2> &points, int size);
+    void writeCircle(const Circle& circle, glm::vec3 color);
     static std::string encodeColor(glm::vec3 color);
 
     void begin(float width, float height, float vp_width, float vp_height);

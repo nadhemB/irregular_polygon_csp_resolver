@@ -1,6 +1,6 @@
 #include <vector>
 #include <glm/fwd.hpp>
-#include "../include/geomtery/poly.h"
+#include "geometry/poly.h"
 #include "graphics/print_config.h"
 #include "graphics/svg_printer.h"
 

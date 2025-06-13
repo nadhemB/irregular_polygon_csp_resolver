@@ -1,7 +1,7 @@
 #pragma once
 #include <glm/vec2.hpp>
 #include <vector>
-#include "geomtery/poly.h"
+#include "geometry/poly.h"
 #include "io/json_adapter.h"
 
 class Problem : public Serializable

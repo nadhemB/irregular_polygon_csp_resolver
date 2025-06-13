@@ -1,11 +1,11 @@
-#include "opencl_query_test.h"
-
+#include "tests/opencl_query_test.h"
 #include <iostream>
-
+#include "tests/delaunay_test.h"
 int main()
 {
-    queryOpenCLDevices();
-
+    // queryOpenCLDevices();
+    // testTriangleHash();
+    delaunayTest();
     std::cout << "press any key to exit!" << std::endl;
     std::cin.get();
     return 0;
