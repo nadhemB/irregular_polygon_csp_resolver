@@ -5,6 +5,7 @@
 #include <vector>
 #include "geometry/shapes2d.h"
 #include "maths/math_tools.h"
+#include "geometry/edge.h"
 class Triangle
 {
 public:
@@ -14,6 +15,14 @@ public:
     {
         calculateBisectors();
         calculateMedians();
+        calculateEdges();
+        
+    }
+
+    bool operator==(const Triangle& other) const {
+        std::vector<glm::vec2> vertices{ v0(), v1(), v2() };
+        std::vector<glm::vec2> otherVerices{ other.v0(), other.v1(), other.v2() };
+        return math::verticesEquality(vertices, other.getVertices());
     }
 
     float signedArea() const
@@ -48,6 +57,12 @@ public:
         return Circle(circumCenter, radius);
     }
 
+    void calculateEdges() {
+        edges[0] = Edge(v0(), v1());
+        edges[1] = Edge(v1(), v2());
+        edges[2] = Edge(v2(), v0());
+    }
+
     void calculateBisectors()  {
         auto e01 = glm::normalize(vertices[1] - vertices[0]);
         auto e02 = glm::normalize(vertices[2] - vertices[0]);
@@ -74,6 +89,21 @@ public:
         medians[2] = Ray((vertices[0] + vertices[1]) * 0.5f, n2);
     }
 
+    glm::vec2 v0() const {
+        return vertices[0];
+    }
+    glm::vec2 v1() const {
+        return vertices[1];
+    }
+    glm::vec2 v2() const {
+        return vertices[2];
+    }
+
+    std::array<Edge, 3> getEdges()const {
+        return edges;
+    }
+ 
+    
     std::array<glm::vec2, 3> vertices;
 
 
@@ -85,4 +115,8 @@ private:
     std::array<Ray, 3> medians{ Ray{glm::vec2(0), glm::vec2(0)},
                         Ray{glm::vec2(0), glm::vec2(0)},
                         Ray{glm::vec2(0), glm::vec2(0)} };
+
+    std::array<Edge, 3> edges{ Edge{glm::vec2(0), glm::vec2(0)},
+        Edge{glm::vec2(0), glm::vec2(0)},
+        Edge{glm::vec2(0), glm::vec2(0)} };
 };

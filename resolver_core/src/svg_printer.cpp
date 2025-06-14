@@ -32,6 +32,24 @@ void SvgPrinter::writeCircle(const Circle& circle, glm::vec3 color)
         static_cast<int>(circle.center.y), static_cast<int>(circle.radius), encodeColor(color))
         << std::endl;
 }
+
+void SvgPrinter::writeTriangle(const Triangle& triangle) {
+     
+     std::string points = "";
+     std::vector<glm::vec2>  vertices =  triangle.getVertices();
+
+     for (auto& point : vertices)
+     {
+         points += std::format("{},{} ", static_cast<int>(point.x), static_cast<int>(point.y));
+     }
+
+     std::string svg = std::format("<polyline points=\"{}\" fill=\"{}\" stroke=\"{}\" />",
+         points, encodeColor(printConfig.fillColor), encodeColor(printConfig.strokeColor));
+
+     buffer << svg << std::endl;
+
+}
+
 std::string SvgPrinter::encodeColor(glm::vec3 color)
 {
     float r = std::clamp(color.r, 0.0f, 1.0f);

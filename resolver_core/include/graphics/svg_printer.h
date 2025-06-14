@@ -8,12 +8,14 @@
 #include <iostream>
 #include <sstream>
 #include <geometry/shapes2d.h>
+#include <geometry/triangle.h>
 
 class SvgPrinter
 {
 
 public:
     void writePoly(Polygon &poly);
+    void writeTriangle(const Triangle& triangle);
     void writePoints(std::vector<glm::vec2> &points, int size);
     void writeCircle(const Circle& circle, glm::vec3 color);
     static std::string encodeColor(glm::vec3 color);

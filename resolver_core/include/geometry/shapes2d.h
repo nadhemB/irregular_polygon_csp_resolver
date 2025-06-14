@@ -14,8 +14,6 @@ struct Circle
 struct Ray
 {
 
-
-
     Ray& operator=(const Ray& other) = default;
     Ray(const glm::vec2 &origin, const glm::vec2 &direction)
         : origin(origin), dir(glm::normalize(direction)) {}

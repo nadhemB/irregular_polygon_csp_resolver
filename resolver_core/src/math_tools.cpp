@@ -52,3 +52,62 @@ glm::vec2 math::project(glm::vec2 point, glm::vec2 a, glm::vec2 b) {
     glm::vec2 pr = a + glm::dot(ap, ab) / glm::length(ab) * glm::normalize(ab);
     return pr;
 }
+
+std::vector<glm::vec2> math::order(std::vector<glm::vec2> list) {
+    //find smallest vertex
+    int startIndex = 0;
+    glm::vec2 startPoint = list[0];
+    for (int i = 1; i < list.size(); i++) {
+        auto current = list[i];
+        float diff = current.x - startPoint.x;
+        if (diff < -1e-6) {
+            startPoint = current;
+            startIndex = i;
+        }
+        else if (std::abs(diff) < 1e-6) {
+            float yDiff = current.y - startPoint.y;
+            if (yDiff < -1e-6) {
+                startIndex = i;
+                startPoint = current;
+            }
+        }
+    }
+    //rotate
+    std::vector<glm::vec2> orderedList;
+    for (int i = 0; i < list.size(); i++) {
+        int index = (startIndex + i) % list.size();
+        orderedList.push_back(list[index]);
+    }
+    return orderedList;
+}
+
+bool math::verticesEquality(const std::vector<glm::vec2>& vertices0, const std::vector<glm::vec2>& vertices1)
+{
+    if (vertices0.size() != vertices1.size())
+        return false;
+    bool equal = true;
+    std::vector<glm::vec2> ordered0 = math::order(vertices0);
+    std::vector<glm::vec2> reversed = std::vector<glm::vec2>(vertices0.begin(), vertices0.end());
+    reversed = math::order(reversed);
+    std::reverse(reversed.begin(), reversed.end());
+    std::vector<glm::vec2> ordered1 = math::order(vertices1);
+
+    for (int i = 0; i < ordered0.size(); i++) {
+        glm::bvec2 comp = glm::epsilonEqual(ordered0[i], ordered1[i], static_cast<float>(1e-6));
+        if (!comp.x || !comp.y) {
+            equal = false;
+            break;
+        }
+    }
+    if (!equal) {
+        equal = true;
+        for (int i = 0; i < ordered0.size(); i++) {
+            glm::bvec2 comp = glm::epsilonEqual(reversed[i], ordered1[i], static_cast<float>(1e-6));
+            if (!comp.x || !comp.y) {
+                equal = false;
+                break;
+            }
+        }
+    }
+    return equal;
+}

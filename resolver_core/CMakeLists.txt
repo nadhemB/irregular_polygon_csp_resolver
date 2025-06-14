@@ -38,7 +38,7 @@ if(NOT SRC_FILES)
     message(FATAL_ERROR "No source files found in src/")
 endif()
 
-add_executable(resolver_core ${SRC_FILES} ${SHARED_SOURCES} main.cpp)
+add_executable(resolver_core ${SRC_FILES} ${SHARED_SOURCES} main.cpp "include/maths/hashs.h")
 
 target_include_directories(resolver_core PRIVATE
     ${SHARED_INCLUDE_DIRS}
@@ -59,7 +59,7 @@ add_custom_command(
 
         message("Configuring test executable")
 
-    add_executable(solver_test  ${SRC_FILES} ${SHARED_SOURCES} test_runner.cpp)
+    add_executable(solver_test  ${SRC_FILES} ${SHARED_SOURCES} test_runner.cpp "include/maths/hashs.h")
 
     target_include_directories(solver_test PRIVATE
         ${SHARED_INCLUDE_DIRS}
